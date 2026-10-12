@@ -1,6 +1,6 @@
 # Zilu Tian
 
-Compiler and systems engineer with 8+ years of experience in query and compiler optimization, parallel computing, and AI inference acceleration. PhD in Computer Science (EPFL); first-author publications at SIGMOD, ASPLOS, and ICDT.
+Compiler and systems engineer with 8+ years of experience in query and compiler optimization, parallel computing, and AI inference acceleration. PhD in Computer Science (EPFL); first-author publications at SIGMOD, ASPLOS, and ICDT. Trained in actuarial science, with applied experience in insurance risk modeling and risk/fraud analytics.
 
 Currently a Senior AI Engineer designing fused AI operators and end-to-end compiler toolchains (TVM / LLVM / PyTorch) for specialized accelerators.
 
@@ -9,6 +9,7 @@ Currently a Senior AI Engineer designing fused AI operators and end-to-end compi
 - **AI inference** — taking models from framework to efficient deployment across data centers, edge devices, and HPC clusters: quantization, operator fusion, graph-level optimization, Triton/CUDA kernel development
 - **Compilers** — optimization passes, IR transformations, and code generation in LLVM, MLIR, and Triton; compiler formalisms for static analysis and transformation of stateful parallel computation (SIGMOD'25)
 - **Systems & profiling** — full-stack performance engineering: perf, VTune, flame graphs, microarchitecture analysis, memory-subsystem bottleneck identification; 10–1000x speedups through compiler-driven parallelism, memory-hierarchy optimization, and hardware-aware scheduling
+- **Actuarial science & risk analytics** — formal training in actuarial science (life contingency, probability, stochastic processes, loss distributions, insurance risk modeling); statistical/quantitative modeling for risk assessment and pricing; large-scale anomaly detection adapted to fraud, claims-outlier, and operational-risk scenarios; 3rd prize, Travelers Actuarial Competition (2015)
 
 ## Selected repositories
 
