@@ -23,7 +23,7 @@ Building and optimizing query engines and distributed data-processing systems:
 
 ## Selected repositories
 
-- [watup-llm](https://github.com/ZiluTian/watup-llm) — LLM fine-tuning & low-latency inference pipeline (work in progress)
+- [watup-llm](https://github.com/ZiluTian/watup-llm) — LLM inference engineering: a 12-kernel CUDA GEMV ladder for the decode hot path (up to 89× vs. naive), batched-decode sweep, and cache-cold measurement methodology (RTX 5090)
 - [RegularPathQuery](https://github.com/ZiluTian/RegularPathQuery) — C++ graph query engine; output-sensitive evaluation of regular path queries (ICDT'26)
 - [BSPModel](https://github.com/ZiluTian/BSPModel) — typed model + staged compiler for parallel stateful computation (SIGMOD'25)
 - [SIGMOD23Experiments](https://github.com/ZiluTian/SIGMOD23Experiments) — simulation workloads on Spark / GraphX / Giraph / Flink / CloudCity, one self-contained repo (SIGMOD'23, GPCE'23)
