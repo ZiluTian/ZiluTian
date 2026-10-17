@@ -23,6 +23,7 @@ Building and optimizing query engines and distributed data-processing systems:
 
 ## Selected repositories
 
+- [it-assistant](https://github.com/ZiluTian/it-assistant) — self-hosted LLM IT copilot: Qwen3.8-27B on 2× GTX 1080 Ti (llama.cpp, no sudo, EOL Ubuntu 18.04) with 1.7× MTP speculative decode, plus a stdlib-only fleet monitor that streams on-demand health reports — telemetry never leaves the box
 - [watup-llm](https://github.com/ZiluTian/watup-llm) — LLM inference engineering: a 12-kernel CUDA GEMV ladder for the decode hot path (up to 89× vs. naive), batched-decode sweep, and cache-cold measurement methodology (RTX 5090)
 - [RegularPathQuery](https://github.com/ZiluTian/RegularPathQuery) — C++ graph query engine; output-sensitive evaluation of regular path queries (ICDT'26)
 - [BSPModel](https://github.com/ZiluTian/BSPModel) — typed model + staged compiler for parallel stateful computation (SIGMOD'25)
