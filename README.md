@@ -1,16 +1,65 @@
 # Zilu Tian
 
-Compiler and database systems engineer with 8+ years of experience in query optimization, compiler optimization, parallel computing, and AI inference acceleration. PhD in Computer Science (EPFL); first-author publications at SIGMOD, ASPLOS, and ICDT. Trained in actuarial science, with applied experience in insurance risk modeling and risk/fraud analytics.
+AI inference engineer with 8+ years of experience across LLM deployment,
+compiler optimization, and database systems — from fused operators for
+specialized accelerators down to memory-bus-level analysis of the LLM
+decode hot path. PhD in Computer Science (EPFL); first-author publications
+at SIGMOD, ASPLOS, and ICDT. Trained in actuarial science, with applied
+experience in insurance risk modeling and risk/fraud analytics.
 
-Currently a Senior AI Engineer designing fused AI operators and end-to-end compiler toolchains (TVM / LLVM / PyTorch) for specialized accelerators.
+Currently a Senior AI Engineer designing fused AI operators and end-to-end
+compiler toolchains (TVM / LLVM / PyTorch) for specialized accelerators.
 
 ## Focus
 
-- **AI inference** — taking models from framework to efficient deployment across data centers, edge devices, and HPC clusters: quantization, operator fusion, graph-level optimization, Triton/CUDA kernel development
-- **Compilers** — optimization passes, IR transformations, and code generation in LLVM, MLIR, and Triton; compiler formalisms for static analysis and transformation of stateful parallel computation (SIGMOD'25)
-- **Databases & query optimization** — query engines, output-sensitive algorithms, and parallel/distributed query execution; 10–1000x performance gains via memory-hierarchy and data-locality optimization
-- **Systems & profiling** — full-stack performance engineering: perf, VTune, flame graphs, microarchitecture analysis, memory-subsystem bottleneck identification; 10–1000x speedups through compiler-driven parallelism, memory-hierarchy optimization, and hardware-aware scheduling
-- **Actuarial science & risk analytics** — formal training in actuarial science (life contingency, probability, stochastic processes, loss distributions, insurance risk modeling); statistical/quantitative modeling for risk assessment and pricing; large-scale anomaly detection adapted to fraud, claims-outlier, and operational-risk scenarios; 3rd prize, Travelers Actuarial Competition (2015)
+- **LLM inference & deployment** — taking models from framework to the wire
+  across data centers, edge devices, and HPC clusters: decode hot-path
+  optimization (custom CUDA GEMV kernels, up to 89× vs. naive),
+  quantization, speculative decoding, and full-stack deployment on
+  constrained hardware (EOL OS, no sudo, userspace toolchains)
+- **AI compiler infrastructure** — fused operators, operator fusion,
+  graph-level optimization, and Triton/CUDA kernel development; end-to-end
+  toolchains (TVM / LLVM / PyTorch) for specialized accelerators
+- **Compilers** — optimization passes, IR transformations, and code
+  generation in LLVM, MLIR, and Triton; compiler formalisms for static
+  analysis and transformation of stateful parallel computation (SIGMOD'25)
+- **Databases & query optimization** — query engines, output-sensitive
+  algorithms, and parallel/distributed query execution; 10–1000x
+  performance gains via memory-hierarchy and data-locality optimization
+- **Systems & profiling** — full-stack performance engineering: perf,
+  VTune, flame graphs, microarchitecture analysis, memory-subsystem
+  bottleneck identification (bandwidth-bound vs. compute-bound regimes);
+  10–1000x speedups through compiler-driven parallelism, memory-hierarchy
+  optimization, and hardware-aware scheduling
+- **Actuarial science & risk analytics** — formal training in actuarial
+  science (life contingency, probability, stochastic processes, loss
+  distributions, insurance risk modeling); statistical/quantitative
+  modeling for risk assessment and pricing; large-scale anomaly detection
+  adapted to fraud, claims-outlier, and operational-risk scenarios; 3rd
+  prize, Travelers Actuarial Competition (2015)
+
+## LLM & AI Inference
+
+- **Decode hot path** — a 12-kernel CUDA GEMV ladder for transformer
+  decode on RTX 5090, up to 89× vs. a naive GEMV, with a cache-cold
+  measurement methodology that survives real-world noise
+  ([watup-llm](https://github.com/ZiluTian/watup-llm))
+- **Speculative decoding, measured** — on bandwidth-bound consumer GPUs a
+  separate 4B draft model *slows* decoding down (it shares the memory bus
+  with the target); the checkpoint's own co-trained MTP head delivers
+  1.7× (26.1 vs. 15.4 tok/s on Qwen3.8-27B). Full A/B methodology and the
+  bandwidth math:
+  [it-assistant/BENCHMARKS.md](https://github.com/ZiluTian/it-assistant/blob/main/BENCHMARKS.md)
+- **Deployment engineering on constrained hardware** — a self-hosted 27B
+  LLM copilot on two ten-year-old GTX 1080 Ti: EOL Ubuntu 18.04, no sudo,
+  full userspace toolchain (gcc-8 + CUDA 11.4), llama.cpp built from source
+  for SM_61, even dual-GPU tensor split, on-demand streamed health reports
+  — telemetry never leaves the box
+  ([it-assistant](https://github.com/ZiluTian/it-assistant))
+- **Fused operators & end-to-end toolchains** — current work: fused AI
+  operators and compiler toolchains (TVM / LLVM / PyTorch) for specialized
+  accelerators, from quantization and operator fusion to graph-level
+  optimization
 
 ## Databases & Query Optimization
 
