@@ -21,6 +21,9 @@ A 12-kernel CUDA GEMV ladder for transformer decode on an RTX 5090, **up to 89×
 **[RegularPathQuery](https://github.com/ZiluTian/RegularPathQuery): a C++ graph query engine**
 Output-sensitive evaluation of regular path queries with parallel execution, built to cut latency under high-concurrency analytical workloads (ICDT 2026).
 
+**[torch-hostdev-lint](https://github.com/ZiluTian/torch-hostdev-lint): find per-iteration CPU↔GPU syncs without running your code**
+A static, no-execution linter that walks PyTorch source via the AST and flags the closed set of host↔device sync/transfer APIs (`.item()`, `.cpu()`, `.to(device)`, `torch.*(..., device=)`) with loop-context severity — a `.item()` inside a `for` is HIGH with a concrete "accumulate on device, sync once" fix, while one-shot setup calls are down-graded to LOW. Stdlib-only, CI exit codes, JSON output, 43 tests.
+
 ---
 
 ## What I work on
