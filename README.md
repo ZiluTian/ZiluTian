@@ -24,6 +24,9 @@ Output-sensitive evaluation of regular path queries with parallel execution, bui
 **[torch-hostdev-lint](https://github.com/ZiluTian/torch-hostdev-lint): find per-iteration CPU↔GPU syncs without running your code**
 A static, no-execution linter that walks PyTorch source via the AST and flags the closed set of host↔device sync/transfer APIs (`.item()`, `.cpu()`, `.to(device)`, `torch.*(..., device=)`) with loop-context severity — a `.item()` inside a `for` is HIGH with a concrete "accumulate on device, sync once" fix, while one-shot setup calls are down-graded to LOW. Stdlib-only, CI exit codes, JSON output, pre-commit hook, 45 tests — plus a measured benchmark showing ruff (no plugin API) catches 0 of the patterns while a ~80-line DIY hook covers ~17% of the finding space.
 
+**[gitlab-mr-tracker](https://github.com/ZiluTian/gitlab-mr-tracker): live-track a GitLab MR's CI pipeline and comments from your terminal**
+A zero-dependency Python CLI that renders an auto-refreshing dashboard of a merge request's CI run — every job with a color-coded status and duration, a `x/y done` progress line, and failed-job trace links — while following the MR's *current* head, so a new push tracks the new pipeline automatically. It surfaces new comments from others (with a deep link to each note), replies threaded or top-level with `@mentions` (`--dry-run` to preview), and `--watch` keeps monitoring after CI finishes. The GitLab token is read from `GITLAB_TOKEN` at run time and never stored; works with any instance, self-hosted or gitlab.com.
+
 ---
 
 ## What I work on
