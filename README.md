@@ -10,6 +10,9 @@ Currently a Senior AI Engineer building fused operators and end-to-end compiler 
 
 ## Highlights
 
+**[minishield](https://github.com/ZiluTian/minishield): an LLVM pass plugin grown into a three-volume study book**
+Control-flow flattening for the LLVM 23.1.5 New Pass Manager, developed lesson by lesson in C++20 alongside a [three-volume web book](https://zilutian.github.io/minishield/) (85 lessons) that teaches the compiler concepts behind it: from the environment and a first stats pass, through CFG/loop analysis and an eligibility guard, to the flattening rewrite itself — PHI and cross-block value demotion, dispatcher construction, branch rewriting, and the checks that prove behavior is preserved — then a hardening crash course (CFI type checks, stack canaries, OLLVM-style obfuscation, position independence), each technique backed by fixtures, fuzzing, and differential runs. In the repo today: stats, CFG analysis, and eligibility are implemented; the flattening transform is registered and stubbed while all three volumes stand as complete teaching drafts.
+
 **[it-assistant](https://github.com/ZiluTian/it-assistant): a 27B LLM copilot on two 10-year-old GPUs**
 Self-hosted Qwen3.8-27B on 2× GTX 1080 Ti, on end-of-life Ubuntu 18.04 with no sudo (userspace gcc-8 + CUDA 11.4, llama.cpp built from source for SM_61). It streams on-demand fleet health reports, and the telemetry never leaves the box.
 - **26.1 tok/s vs. 15.4 baseline (1.7×)** using the checkpoint's own co-trained MTP head.
