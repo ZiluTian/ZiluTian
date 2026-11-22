@@ -12,6 +12,7 @@ Currently a Senior AI Engineer building fused operators and end-to-end compiler 
 
 - **[《大模型推理部署与加速》 · LLM Inference Deployment and Acceleration](https://github.com/ZiluTian/ai-infra-prep)** (Chinese) — a hands-on guide to serving LLMs with vLLM, SGLang, and TensorRT-LLM, from KV caching and CUDA kernels to distributed inference and production debugging. Includes runnable labs, including a CPU-only GRPO exercise.
 - **[From BEV to Tokens: The VLM Handbook for the CV Engineer](https://zilutian.github.io/vlm-book/)** — a pseudocode-driven guide to vision-language models for computer vision engineers, with annotated tensor shapes, comprehension checks, and interview questions. [Source](https://github.com/ZiluTian/vlm-book).
+- **[MiniShield: The Study Fieldnotes](https://zilutian.github.io/minishield/)** — a three-volume, hands-on book on building LLVM passes in C++, from compiler foundations through control-flow transformations and hardening. [Source](https://github.com/ZiluTian/minishield).
 
 ---
 
