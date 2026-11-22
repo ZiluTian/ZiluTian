@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 186" width="280" height="186" role="img" aria-label="MiniShield: The Study Fieldnotes">
+  <rect x="1" y="1" width="278" height="184" rx="9" fill="#ffdda8" stroke="#482e17"/>
+  <path d="M12 2v182" stroke="#482e17" opacity=".3"/>
+  <g fill="#482e17" font-family="Arial, sans-serif">
+    <text x="30" y="30" font-size="12" letter-spacing="2">ZT  /  FIELD LIBRARY</text><text x="232" y="30" font-size="13">03</text>
+    <path d="M30 40h220" stroke="#482e17" opacity=".45"/>
+    <g color="#482e17"><path d="M139 60L79 78l60 19 60-19z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="125" y="53" width="28" height="8" rx="3"/><rect x="65" y="74" width="28" height="8" rx="3"/><rect x="185" y="74" width="28" height="8" rx="3"/><rect x="125" y="95" width="28" height="8" rx="3"/></g>
+    <text x="29" y="141" font-size="25" font-weight="700">MiniShield</text>
+    <text x="30" y="166" font-size="16">The Study Fieldnotes</text>
+  </g>
+</svg>

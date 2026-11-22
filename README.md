@@ -8,11 +8,15 @@ Compiler, database & systems engineer — AI inference, query optimization, perf
 
 ## Books
 
-| Read online | What's inside |
-| :--- | :--- |
-| **[《大模型推理部署与加速》](https://github.com/ZiluTian/ai-infra-prep)** | **LLM inference · Chinese.** KV caches, scheduling, CUDA kernels, and distributed serving with vLLM, SGLang, and TensorRT-LLM. Includes runnable labs and a CPU-only GRPO exercise. |
-| **[From BEV to Tokens](https://zilutian.github.io/vlm-book/)** · [Source](https://github.com/ZiluTian/vlm-book) | **Vision-language models.** A handbook for CV engineers, with shape-annotated pseudocode, comprehension checks, and interview questions. |
-| **[MiniShield: The Study Fieldnotes](https://zilutian.github.io/minishield/)** · [Source](https://github.com/ZiluTian/minishield) | **LLVM.** Three hands-on volumes on writing passes in C++, from CFG analysis and control-flow transformations to hardening. |
+<p>
+<a href="https://github.com/ZiluTian/ai-infra-prep"><img src="assets/book-infra.svg" width="260" alt="Read LLM Inference: 大模型推理部署与加速"></a>
+<a href="https://zilutian.github.io/vlm-book/"><img src="assets/book-vlm.svg" width="260" alt="Read From BEV to Tokens: The VLM Handbook"></a>
+<a href="https://zilutian.github.io/minishield/"><img src="assets/book-llvm.svg" width="260" alt="Read MiniShield: The Study Fieldnotes"></a>
+</p>
+
+- **[大模型推理部署与加速](https://github.com/ZiluTian/ai-infra-prep)** · Chinese · Trace a request from its KV cache to a distributed serving cluster, then try the runnable labs.
+- **[From BEV to Tokens](https://zilutian.github.io/vlm-book/)** · Follow the tensor shapes from image features to language tokens. [Source](https://github.com/ZiluTian/vlm-book).
+- **[MiniShield](https://zilutian.github.io/minishield/)** · Build LLVM passes in C++ across three volumes: foundations, transformations, and hardening. [Source](https://github.com/ZiluTian/minishield).
 
 ## Projects
 
