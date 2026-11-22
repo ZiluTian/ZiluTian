@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" width="920" height="290" role="img" aria-labelledby="title description">
-  <title id="title">Zilu Tian — AI inference engineer</title>
+  <title id="title">Zilu Tian — AI Engineer</title>
   <desc id="description">A dark systems-console banner with a pipeline from tokens through KV cache to decode.</desc>
   <defs>
     <linearGradient id="bg" x2="1" y2="1" gradientUnits="objectBoundingBox">
@@ -18,11 +18,11 @@
     <circle cx="855" cy="29" r="4" fill="#76e6cd"/>
     <circle cx="869" cy="29" r="4" fill="#9ab6ff"/>
     <circle cx="883" cy="29" r="4" fill="#efb2fe"/>
-    <text x="43" y="267" fill="#a8b8d3" font-size="14">GPU KERNELS  /  COMPILERS  /  DISTRIBUTED SERVING</text>
+    <text x="43" y="267" fill="#a8b8d3" font-size="14">COMPILERS  /  DATABASES  /  SYSTEMS</text>
   </g>
   <g font-family="system-ui, Arial, sans-serif">
     <text x="38" y="139" fill="#f4f7ff" font-size="66" font-weight="750">Zilu Tian</text>
-    <text x="43" y="189" fill="#76e6cd" font-size="30" font-weight="600">AI inference engineer</text>
+    <text x="43" y="189" fill="#76e6cd" font-size="30" font-weight="600">AI Engineer</text>
   </g>
   <g fill="none" stroke="#536e9b" stroke-width="2">
     <path d="M628 144H653L669 125H686M628 144H653L669 163H686M743 125H766L782 144H802M743 163H766L782 144H802"/>

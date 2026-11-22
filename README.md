@@ -1,6 +1,6 @@
-<img src="assets/inference-banner.svg" width="920" alt="Zilu Tian — AI inference engineer. GPU kernels, compilers, and distributed serving.">
+<img src="assets/inference-banner.svg" width="920" alt="Zilu Tian — AI Engineer. Compilers, databases, and systems.">
 
-I make LLMs run faster, from custom GPU kernels to distributed serving. I build fused operators and compiler toolchains for specialized accelerators, and I have a PhD in database systems from EPFL.
+Compiler, database & systems engineer — AI inference, query optimization, performance profiling. PhD (EPFL). SIGMOD · ASPLOS · ICDT.
 
 **On this page:** [Books](#books) · [Projects](#projects) · [Research](#selected-publications)
 
